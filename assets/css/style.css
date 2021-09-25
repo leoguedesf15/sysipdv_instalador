@@ -21,3 +21,9 @@ nav,.card{
    
     transform: translateY(50%); 
 }
+div.nav-wrapper{
+    padding:0px 0px 0px 20px;
+}
+footer{
+    text-align: center;
+}
