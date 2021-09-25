@@ -31,7 +31,7 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <li>Para captar um novo token envie uma request para /login</li>
     <li>O D.E.R. encontra-se na pasta documentação</li>
     <br>
-    <a href="#">Instalação Manual da API</a>
+    <a href="https://github.com/leoguedesf15/crud_ipdv">Instalação Manual da API</a>
     <br>
-    <a href="#">Instalação Manual do Front</a>
+    <a href="https://github.com/leoguedesf15/sysipdv">Instalação Manual do Front</a>
 </ul>
