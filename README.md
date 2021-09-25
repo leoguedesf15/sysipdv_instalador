@@ -31,7 +31,7 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <li>Incluído neste zip um arquivo de collection do postman.</li>
     <li>Para testar a API, basta importar a collection e terá acesso aos padrões das chamadas REST.</li>
     <li>Todas as chamadas são protegidas sob o token jwt. Caso não atualize o Bearer Token na aba autorização, a chamada voltará com status 401(unauthorized).</li>
-    <li>Para captar um novo token basta enviar uma request para /login passando user admin@admin e senha em hash md5 da string 123</li>
+    <li>Para captar um novo token basta enviar uma request para /login passando user admin@admin e senha em hash md5 da string "123"</li>
     <li>O D.E.R. encontra-se na pasta documentação deste repositório</li>
     <br>
     <a href="https://github.com/leoguedesf15/crud_ipdv" target="_blank">Instalação Manual da API</a>
