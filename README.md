@@ -38,19 +38,3 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <br>
     <a href="https://github.com/leoguedesf15/sysipdv" target="_blank">Instalação Manual do Front</a>
 </ul>
-
-
-<script>
-el.addEvent('click', function(e){
-    if(obj.options.onOpen){
-        new Event(e).stop();
-        if(obj.options.open == i){
-            obj.options.open = null;
-            obj.options.onClose(this.href, i);
-        }else{
-            obj.options.open = i;
-            obj.options.onOpen(this.href, i);
-        }   
-    }       
-})
-</script>
