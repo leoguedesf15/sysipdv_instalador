@@ -1,0 +1,834 @@
+{
+	"info": {
+		"_postman_id": "f9c72c72-4f26-4095-9d55-fb14cd2c322b",
+		"name": "CRUD IPDV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@admin",
+									"type": "text"
+								},
+								{
+									"key": "senha ",
+									"value": "202cb962ac59075b964b07152d234b70",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuário",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/usuario",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usuario"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "encontrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/usuario/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usuario",
+								"5"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "apagar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/usuario/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usuario",
+								"5"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "criar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "leonardoo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "leo@leo",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "senha",
+									"type": "text"
+								},
+								{
+									"key": "dtnascimento",
+									"value": "1991-01-02",
+									"type": "text"
+								},
+								{
+									"key": "id_cargo_fk",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_departamento_fk",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/usuario",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usuario"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "leonardo atualizado",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "leo@leo",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "senha",
+									"type": "text"
+								},
+								{
+									"key": "dtnascimento",
+									"value": "1991-01-02",
+									"type": "text"
+								},
+								{
+									"key": "id_cargo_fk",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_departamento_fk",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/usuario/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usuario",
+								"5"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cargo",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cargo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cargo"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "encontrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cargo/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cargo",
+								"1"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "apagar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cargo/6",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cargo",
+								"6"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "criar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome_cargo",
+									"value": "meu cargo",
+									"type": "text"
+								},
+								{
+									"key": "descricao",
+									"value": "minha desc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/cargo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cargo"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome_cargo",
+									"value": "Diretor novo",
+									"type": "text"
+								},
+								{
+									"key": "descricao",
+									"value": "minha desc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/cargo/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cargo",
+								"1"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Departamento",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/departamento",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"departamento"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "encontrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/departamento/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"departamento",
+								"2"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "apagar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cargo/6",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cargo",
+								"6"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "criar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome_cargo",
+									"value": "meu cargo",
+									"type": "text"
+								},
+								{
+									"key": "descricao",
+									"value": "minha desc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/cargo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cargo"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome_departamento",
+									"value": "Departamento atualizado",
+									"type": "text"
+								},
+								{
+									"key": "id_centro_custo_fk",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/departamento/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"departamento",
+								"2"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Centro de Custo",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/centro-de-custo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"centro-de-custo"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "encontrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODM5NDAsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.2XK7dXq4pv/CG1xTBdnRBDLDhdJr9ihmOv3Ay3CxPeM=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/centro-de-custo/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"centro-de-custo",
+								"1"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "apagar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODc2MjIsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.PTgXVwPfkuPP2LedczuGKvwtcw9VxNtr0JpWMvkGvO4=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/centro-de-custo/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"centro-de-custo",
+								"2"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "criar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODc2MjIsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.PTgXVwPfkuPP2LedczuGKvwtcw9VxNtr0JpWMvkGvO4=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome_centro_custo",
+									"value": "centro de custo novo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/centro-de-custo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"centro-de-custo"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI1ODc2MjIsInVpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbiJ9.PTgXVwPfkuPP2LedczuGKvwtcw9VxNtr0JpWMvkGvO4=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome_centro_custo",
+									"value": "Centro de custo atualizado",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/centro-de-custo/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"centro-de-custo",
+								"1"
+							]
+						},
+						"description": "Tdoas as requests são protegidas pela JWT - Inclua o token de autorização\r\nConsiga o token se logando através da rota /login"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost/crud_ipdv/public/index.php"
+		}
+	]
+}

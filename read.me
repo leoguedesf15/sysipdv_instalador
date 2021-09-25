@@ -1,0 +1,19 @@
+Este instalador funcionará com terminais bash!
+
+Para windows use Cmder ou Git Bash!
+
+Caso tenha o Git For Windows instalado, é esperado que consiga executar ao "duplo clique"!
+
+Caso não consiga, abra o terminal Git Bash ou Cmder, navegue até a pasta do projeto e execute "sh install.sh"
+
+O instalador o guiará na configuração do banco e importação das tabelas. 
+
+Caso a instalação automática falhe, o método manual está descrito no readme de cada repositório (back e front)
+
+Incluído neste zip um arquivo de collection do postman.
+
+Para testar a API, basta importar a collection e terá acesso aos padrões das chamadas REST.
+
+Todas as chamadas são protegidas sob o token jwt. Caso não atualize o Bearer Token na aba autorização, a chamada voltará com status 401(unauthorized).
+
+Para captar um novo token envie uma request para /login
