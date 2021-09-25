@@ -34,7 +34,7 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <li>Para captar um novo token basta enviar uma request para /login passando user admin@admin e senha em hash md5 da string 123</li>
     <li>O D.E.R. encontra-se na pasta documentação deste repositório</li>
     <br>
-    <a href="https://github.com/leoguedesf15/crud_ipdv">Instalação Manual da API</a>
+    <a href="https://github.com/leoguedesf15/crud_ipdv" target="_blank">Instalação Manual da API</a>
     <br>
-    <a href="https://github.com/leoguedesf15/sysipdv">Instalação Manual do Front</a>
+    <a href="https://github.com/leoguedesf15/sysipdv" target="_blank">Instalação Manual do Front</a>
 </ul>
