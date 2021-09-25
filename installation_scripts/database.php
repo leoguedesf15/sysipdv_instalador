@@ -27,7 +27,7 @@
     
 
     $cmd1 = "CREATE TABLE IF NOT EXISTS cargos(
-        id_cargo      SERIAL         PRIMARY KEY,
+        id_cargo      SERIAL      PRIMARY KEY,
         nome_cargo    varchar(30) NOT NULL,
         descricao     varchar(60) NOT NULL
     );";
