@@ -11,6 +11,7 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
 <h2>Pré requisitos</h2>
 <ul>
     <li>Banco de dados PostgreSQL</li>
+    <li>Git</li>
     <li>PHP v7.4 (Versão testada)</li>
     <li>Servidor Apache</li>
     <li>Node.js com npm</li>
@@ -19,6 +20,7 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
 <h2>Instruções</h2>
 <ul>
     <li>Você pode adquirir este instalador, baixando como zip ou clonando este repositório!</li>
+    <li>Antes de iniciar a instalação tenha certeza que sua máquina atende os pré-requisitos informados acima, ou a instalação falhará!</li>
     <li>Este instalador funcionará com terminais bash!</li>
     <li>Para windows use preferencialmente Cmder ou Git Bash!</li>
     <li>Caso tenha o Git For Windows instalado, é esperado que consiga executar ao "duplo clique"!</li>
