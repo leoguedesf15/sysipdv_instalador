@@ -1,0 +1,23 @@
+body{
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: stretch;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+  }
+
+.menu-item:hover{
+    background-color: rgba(140,140,140,.5);
+}
+nav,.card{
+    box-shadow: none;
+}
+.v-center{
+    position: relative;
+   
+    transform: translateY(50%); 
+}
