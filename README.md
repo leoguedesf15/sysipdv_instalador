@@ -1,5 +1,6 @@
-<h1>[SYS - IPDV]</h1>  
+<h1>SYSIpdv</h1>  
 <h2>Overview</h2>
+<h3>Back-End</h3>
 <p>A aplicação foi montada sob o padrão arquitetural MVC.
 Busca também adaptar alguns padrões comportamentais e criacionais ao longo de sua implementação!
 Arquitetura do Software é escalar!
@@ -7,15 +8,18 @@ o index está na pasta public na intenção de não ceder acesso à raiz da apli
 (em produção seria setado um VHost pra public)
 Na raiz do projeto foi posto um .htaccess bem simples com Options -Indexes para que não seja acessado 
 o diretório da aplicação através do browser.
-Classes com comentários sobre a arquitetura e planejamento.</p> 
+Classes com comentários sobre a arquitetura e planejamento.</p>
+<h3>Front-End</h3> 
 <h2>Pré requisitos</h2>
 <ul>
     <li>Banco de dados PostgreSQL</li>
     <li>Git</li>
     <li>PHP v7.4 (Versão testada)</li>
+    <li>Composer</li>
     <li>Servidor Apache</li>
     <li>Node.js com npm</li>
     <li>Framework Angular (testado com Angular 12)</li>
+    <li>Angular CLI</li>
 </ul>
 <h2>Instruções</h2>
 <ul>
