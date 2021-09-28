@@ -22,6 +22,8 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <li>Node.js com npm</li>
     <li>Framework Angular (testado com Angular 12)</li>
     <li>Angular CLI</li>
+    <li>Não possuir na raiz do apache pastas com os nomes crud_ipdv e sysipdv</li>
+    <li>Não possuir nenhum banco de dados no servidor com o nome de crud_ipdv_leonardo (Apesar de ser difícil rs.)</li>
 </ul>
 <h2>Instruções</h2>
 <ul>
