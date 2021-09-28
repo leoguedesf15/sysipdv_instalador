@@ -16,6 +16,8 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <li>Git</li>
     <li>PHP v7.4 (Versão testada)</li>
     <li>Composer</li>
+    <li>Driver ODBC PostgreSQL para PHP</li>
+    <li>Extensões pgsql e pdo_pgsql habilitadas em PHP.ini (Consulte um phpinfo())</li>
     <li>Servidor Apache</li>
     <li>Node.js com npm</li>
     <li>Framework Angular (testado com Angular 12)</li>
@@ -27,7 +29,7 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <li>Antes de iniciar a instalação tenha certeza que sua máquina atende os pré-requisitos informados acima, ou a instalação falhará!</li>
     <li>Este instalador funcionará com terminais bash!</li>
     <li>Para windows use preferencialmente Cmder ou Git Bash!</li>
-    <li>Caso tenha o Git For Windows instalado, é esperado que consiga executar ao "duplo clique"!</li>
+    <li>Caso tenha o Git For Windows instalado, e o mesmo esteja setado como programa padrão para executar arquivos .sh, é esperado que consiga executar ao "duplo clique"!</li>
     <li>Caso não consiga, abra o terminal Git Bash ou Cmder, navegue até a pasta do projeto e execute "sh install.sh"</li>
     <li>O instalador o guiará no deploy da aplicação(back e front), build da aplicação, na criação do banco e importação das tabelas.</li> 
     <li>Após o deploy é necessário configurar o arquivo de configurações de banco da aplicação em crud_ipdv/app/database/DatabaseConnection.php</li>
