@@ -36,6 +36,7 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <li>Caso não consiga, abra o terminal Git Bash ou Cmder, navegue até a pasta do projeto e execute "sh install.sh"</li>
     <li>O instalador o guiará no deploy da aplicação(back e front), serve da aplicação front, na criação do banco e importação das tabelas.</li> 
     <li>Após finalização do instalador, o mesmo deverá permanecer aberto, pois ele quem está servindo o front (com ng serve). Caso decida fechá-lo, terá que navegar pelo git bash manualmente até a pasta do projeto e executar ng serve</li>
+    <li>Após o instalador finalizar, poderá acessar a aplicação pelo browser: http://localhost:4200</li>
     <li>Credenciais de acesso à área restrita: Login: admin@admin / Senha:123</li>
     <li>Após o deploy é necessário configurar o arquivo de configurações de banco da aplicação em crud_ipdv/app/database/DatabaseConnection.php</li>
     <li>Caso a instalação automática falhe, o método manual está descrito no readme de cada repositório (back e front)</li>
