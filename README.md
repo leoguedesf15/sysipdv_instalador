@@ -18,7 +18,7 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <li>PHP v7.4 (Versão testada)</li>
     <li>Composer</li>
     <li>Driver ODBC PostgreSQL para PHP</li>
-    <li>Extensões pgsql e pdo_pgsql habilitadas em PHP.ini (Consulte um phpinfo())</li>
+    <li>Extensões pdo_pgsql habilitadas em PHP.ini (Consulte um phpinfo())</li>
     <li>Servidor Apache</li>
     <li>Node.js com npm</li>
     <li>Framework Angular (testado com Angular 12)</li>
