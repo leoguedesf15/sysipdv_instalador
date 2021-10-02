@@ -10,6 +10,7 @@ Na raiz do projeto foi posto um .htaccess bem simples com Options -Indexes para 
 o diretório da aplicação através do browser.
 Classes com comentários sobre a arquitetura e planejamento.</p>
 <h3>Front-End</h3> 
+<p>A aplicação foi construída com o Framework da Google, Angular, na versão 12. Dividida em camada de componentes e serviços. A modelagem de dados é feita através das interfaces Typescript. A aplicação consome o back em php para tráfego de informações e dados. Para o CSS foi utilizado CSS Materialize. O controle de autenticação e autorização está sendo feito pelo guarda de rotas em conjunto com a JWT (consumida do back), funcionando da seguinte maneira: O guarda de rotas verifica apenas se existe um token armazenado na sessão. Pra todos os efeitos, aos olhos do front, se existe um token a sessão é válida. Este token é passado no header das requests através do AuthInterceptor, que capta a requisição e acrescenta o header Authorization e Content-Type. O back verifica a validade do token e caso este não seja válido, o back retorna 401 e, o front, ao captar este evento, prepara o processo de "expulsão" do usuário da área restrita. </p>
 <h2>Pré requisitos</h2>
 <ul>
     <li>Banco de dados PostgreSQL</li>
@@ -33,7 +34,9 @@ Classes com comentários sobre a arquitetura e planejamento.</p>
     <li>Para windows use preferencialmente Cmder ou Git Bash!</li>
     <li>Caso tenha o Git For Windows instalado, e o mesmo esteja setado como programa padrão para executar arquivos .sh, é esperado que consiga executar ao "duplo clique"!</li>
     <li>Caso não consiga, abra o terminal Git Bash ou Cmder, navegue até a pasta do projeto e execute "sh install.sh"</li>
-    <li>O instalador o guiará no deploy da aplicação(back e front), build da aplicação, na criação do banco e importação das tabelas.</li> 
+    <li>O instalador o guiará no deploy da aplicação(back e front), serve da aplicação front, na criação do banco e importação das tabelas.</li> 
+    <li>Após finalização do instalador, o mesmo deverá permanecer aberto, pois ele quem está servindo o front (com ng serve). Caso decida fechá-lo, terá que navegar pelo git bash manualmente até a pasta do projeto e executar ng serve</li>
+    <li>Credenciais de acesso à área restrita: Login: admin@admin / Senha:123</li>
     <li>Após o deploy é necessário configurar o arquivo de configurações de banco da aplicação em crud_ipdv/app/database/DatabaseConnection.php</li>
     <li>Caso a instalação automática falhe, o método manual está descrito no readme de cada repositório (back e front)</li>
     <li>Incluído neste zip um arquivo de collection do postman.</li>
