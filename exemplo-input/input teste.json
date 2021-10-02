@@ -1,0 +1,18 @@
+[
+    {
+        "nome":"Leonardo 2",
+        "email":"leoguedesf15sdf@gmail.com",
+        "senha":"123456",
+        "dtnascimento":"1991-07-24",
+        "id_cargo_fk":"28",
+        "id_departamento_fk":"5"
+    },
+    {
+        "nome":"Outro user",
+        "email":"outrouser@gmail.com",
+        "senha":"123456",
+        "dtnascimento":"1994-07-24",
+        "id_cargo_fk":"28",
+        "id_departamento_fk":"5"
+    }
+]
